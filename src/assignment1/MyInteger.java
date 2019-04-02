@@ -1,5 +1,5 @@
 package assignment1;
 
-public class First {
+public class MyInteger {
 
 }
