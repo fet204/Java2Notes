@@ -14,7 +14,7 @@ public class Exercise10_03 {
 class MyInteger {
 	
 	//Write code below
-	int value;
+	int value; //the data field that is in the requirements.
 	boolean even = false;
 	boolean prime = false;
 	boolean odd = false;
