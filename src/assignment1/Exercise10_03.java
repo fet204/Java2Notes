@@ -15,13 +15,14 @@ public class Exercise10_03 {
 
 class MyInteger {
 	
-	private int value; //the data field that is in the requirements.
+	int value; //the data field that is in the requirements.
 	static boolean even = false;
 	static boolean prime = false;
 	static boolean odd = false;
 
 	public MyInteger(int x) {
-		this.value = value;
+		this.value = x;
+		System.out.println(value);
 	}
 	
 	public int getVal() {
@@ -37,14 +38,14 @@ class MyInteger {
 	}
 	
 	public boolean isOdd() {
-		if (value % 2 != 0) {
+		if (value % 2 == 0) {
 			odd = true;
 		}
 		return odd;
 	}
 	
 	public boolean isPrime() {
-		for (int i = 0; i > ((value / 2) + 1); i++) {
+		for (int i = 1; i <= value; i++) {
 			if (value % i == 0) {
 				prime = true;
 			}
