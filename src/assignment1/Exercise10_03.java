@@ -3,7 +3,7 @@ package assignment1;
 public class Exercise10_03 {
 	public static void main(String[] args) {
 		
-		MyInteger n1 = new MyInteger(23);
+		MyInteger n1 = new MyInteger(5);
 		
 		System.out.println("n1 is even? " + n1.isEven());
 		System.out.println("n1 is prime? " + n1.isPrime());
