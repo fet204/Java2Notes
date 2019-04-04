@@ -2,18 +2,14 @@ package tuesday;
 
 public class Client {
 	public static void main(String[] args) {
-		Account john = new Account(1122, 20000);
-		Account.setAnnual(4.5); //normally should follow the document but we have it named as something different 
 		
-		john.withdraw(2500); // using johns account to make the changes. Using the account class and the methods we created in there. they can use here in the client. 
-		System.out.println("Balance is: " + john.getBlance());
+		Point p1 = new Point(4,6); 
+		//now that you have changed the Point so its not using the default constructor 
+		//and now you can put in numbers to fix the error and you don't have to use p1.blah to assign variables 
+		Point p2 = new Point(88,99);
 		
-		john.deposit(3000);
-		System.out.println("Balance is: " + john.getBlance());
-
-		System.out.println("Date created: " + john.getDate());
-
+		System.out.println(p1.getX() + " " + p2.getX());
 		
-	}
+	}//main()
 
-}
+}//Client

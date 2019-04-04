@@ -1,4 +1,4 @@
-package inclass;
+package tuesday;
 
 public class Point {
 	

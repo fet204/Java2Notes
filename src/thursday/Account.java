@@ -1,4 +1,4 @@
-package tuesday;
+package thursday;
 
 public class Account {
 	
