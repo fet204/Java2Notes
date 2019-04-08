@@ -9,7 +9,6 @@ public class Account {
 	
 	
 	
-	
 	// making 2 constructors the first one is if they don't have an account created already. 
 	public Account() { // making a constructor that creates the account with the specified id and initial balance
 		datecreated = new java.util.Date(); //this is a default constructor. 
@@ -20,7 +19,6 @@ public class Account {
 		this.balance = balance;
 		datecreated = new java.util.Date();
 	}
-	
 	
 	
 	
@@ -51,11 +49,10 @@ public class Account {
 	}
 	
 	
+	
+	
 	// making the date for the account.
 	public java.util.Date getDate() { //using the java.util.Date to keep track of the date. 
-		
-		
-		
 		return datecreated;
 	}
 	
