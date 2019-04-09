@@ -1,6 +1,6 @@
 package tuesday;
 
-public class Client {
+public class TestClient {
 	public static void main(String[] args) {
 		Employee emp = new Employee(2);
 		Lawyer lisa = new Lawyer(5);

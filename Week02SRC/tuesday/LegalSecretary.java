@@ -1,10 +1,12 @@
 package tuesday;
 
 public class LegalSecretary extends Secretary {
+	public LegalSecretary(int years) {
+		super(years);
+	}
 	
 	public double getSalary() {
-		
-		return 45000;
+		return super.getSalary() + 5000;
 		
 	}
 	
