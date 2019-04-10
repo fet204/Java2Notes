@@ -2,7 +2,7 @@ package practiceitchapt9;
 
 public class Car {
 	public void m1() {
-		System.out.println("car1");
+		System.out.println("car 1");
 	}
 	
 	public void m2() {
@@ -12,14 +12,4 @@ public class Car {
 	public String toString() {
 		return "vroom";
 	}
-	
 }
-
-
-
-
-
-
-
-
-
