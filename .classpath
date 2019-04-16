@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="Java2Final"/>
 	<classpathentry kind="src" path="Week01SRC"/>
 	<classpathentry kind="src" path="Week02SRC"/>
+	<classpathentry kind="src" path="Week03SRC"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
