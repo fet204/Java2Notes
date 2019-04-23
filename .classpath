@@ -6,6 +6,5 @@
 	<classpathentry kind="src" path="Week02SRC"/>
 	<classpathentry kind="src" path="Week03SRC"/>
 	<classpathentry kind="src" path="Week04"/>
-	<classpathentry kind="src" path="JavaGroupProject"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
