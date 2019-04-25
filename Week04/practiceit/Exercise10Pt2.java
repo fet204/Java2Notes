@@ -17,20 +17,20 @@ public class Exercise10Pt2 {
 	
 	public static void swapPairs(ArrayList<String> list) {
 		
-		String oddhold;
+		String oddhold = "";
 		
 		if (list.size() % 2 != 0) {
 			String oddHold = list.get(list.size());
-			list.remove(list.size());
+			list.remove(list.size()-1);
 			
-			for(int i = 0; i < list.size(); i++) {
-				String first = list.get(i);
-				list.remove(i);
-				String second = list.get(i);
-				list.remove(i);
-			}
 			System.out.println(list);
 			
+		}
+		for(int i = 0; i < list.size(); i++) {
+			String first = list.get(i);
+			list.remove(i);
+			String second = list.get(i);
+			list.remove(i);
 		}
 		list.add(oddhold);
 		
