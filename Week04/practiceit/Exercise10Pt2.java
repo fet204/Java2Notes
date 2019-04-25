@@ -17,6 +17,8 @@ public class Exercise10Pt2 {
 	
 	public static void swapPairs(ArrayList<String> list) {
 		
+		
+		
 		String oddhold = "";
 		
 		if (list.size() % 2 != 0) {
@@ -32,9 +34,27 @@ public class Exercise10Pt2 {
 			String second = list.get(i);
 			list.remove(i);
 		}
-		list.add(oddhold);
 		
 		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 	}
 
