@@ -12,6 +12,7 @@ public class Exercise10pt3 {
 			
 			if (wordLen % 2 == 0) {
 				list.remove(i);
+				i--;
 				
 			}
 		}
