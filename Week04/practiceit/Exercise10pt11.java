@@ -17,13 +17,15 @@ public class Exercise10pt11 {
 	
 	public static void stutter(ArrayList<String> list, int k) {
 		
-		if(k = 0 || k == -1) {
+		if(k == 0 || k == -1) {
+			ArrayList<String> empty = new ArrayList<String>();
+			System.out.println(empty);
 			
-			
-			for (int i = 0; i < list.size(); i++) {
-				
-			}
 		}
+		else {
+			
+		}
+		
 	}
 
 }
