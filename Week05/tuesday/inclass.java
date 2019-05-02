@@ -3,8 +3,8 @@ package tuesday;
 public class inclass {
 	// written on the board 
 	
-	/*
-	 * note: the base case is the first case that will stop the code 
+	
+	// note: the base case is the first case that will stop the code 
 
 	public static void print(int n) {
 		if (n == 0) { // this is the stopper code that will find out when n is 0. It will just print nothing and end the code
@@ -18,7 +18,7 @@ public class inclass {
 		
 	}
 	
-	*/
+	
 	
 	///*
 	 // making a factorial 
