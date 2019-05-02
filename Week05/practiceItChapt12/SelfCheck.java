@@ -3,15 +3,25 @@ package practiceItChapt12;
 public class SelfCheck {
 	public static void main(String[] args) {
 		
-		mystery4(6,13);
+		mystery(-12345678);
 		
 	}
 	
-	public static int mystery4(int x, int y) {
-	    if (x < y) {
-	        return x;
-	    } else {
-	        return mystery4(x - y, y);
+	public static void mystery(int n) {
+	    if (n < 0) {
+	    	System.out.print("-");
+	    	mystery(-n);
+	    }
+	    
+	    else if(n < 10) {
+	    	System.out.println(n);
+	    }
+	    
+	    else {
+	    	int two = n% 100;
+	    	System.out.print(two / 10);
+	    	System.out.print(two % 10);
+	    	mystery(n / 100);
 	    }
 	}
 
