@@ -42,7 +42,7 @@ public class starString {
 		}
 
 		else if(i < totStar) {
-			return starStrng(value-1) + "*";
+			return starStrng(value+1) + "*";
 		}
 
 		return "end";
