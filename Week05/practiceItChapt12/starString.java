@@ -30,11 +30,18 @@ public class starString {
 
 
 	public static String starStrng(int value){
+		int totStar = (int) Math.pow(2, value);
+		int i = 0;
+		
+		if(value < 0) throw new IllegalArgumentException(); {
+			value = -(value);
+		}
+		
 		if (value == 0) {
 			return "*";
 		}
 
-		else if(value > 0) {
+		else if(i < totStar) {
 			return starStrng(value-1) + "*";
 		}
 

@@ -6,7 +6,7 @@ public class writeSequence {
 		if (n < 0) throw new IllegalArgumentException();
 		
 		else {
-			return (n)
+			//return (n)
 		}
 		
 		
