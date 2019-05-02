@@ -4,8 +4,10 @@ import java.math.*;
 public class starString {
 
 	public static void main(String[] ars) {
-		starStrng(0);
+		starString(0);
 		System.out.println();
+		
+		/*
 		starStrng(1);
 		System.out.println();
 		starStrng(2);
@@ -14,38 +16,38 @@ public class starString {
 		System.out.println();
 		starStrng(4);
 
-		/*
-		 * 2^0 *                x01
-		 * 2^1 **               x02
-		 * 2^2 ****             x04
-		 * 2^3 ********         x08
-		 * 2^4 **************** x16
+		 * 2^0 *                  x01
+		 * 2^1 **                 x02
+		 * 2^2 ****               x04
+		 * 2^3 ********           x08
+		 * 2^4 ****************   x16
+		 * 
 		 * shlotskys
 		 */
 
-
 	}
 
-
-
-
-	public static String starStrng(int value){
+	public static void starString(int value){
 		int totStar = (int) Math.pow(2, value);
+
 		int i = 0;
 		
-		if(value < 0) throw new IllegalArgumentException(); {
-			value = -(value);
+		if(value == totStar) { 
+			System.out.println("if breaker");
 		}
 		
-		if (value == 0) {
-			return "*";
+		else if(value < totStar) {
+			System.out.println("*");
+			starString(value - 1);
 		}
+		
 
-		else if(i < totStar) {
-			return starStrng(value+1) + "*";
-		}
-
-		return "end";
+			
+			
+			
+			
+			
+			
 	}
 
 }
