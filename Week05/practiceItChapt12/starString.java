@@ -36,17 +36,19 @@ public class starString {
 			System.out.println("if breaker");
 		}
 		
-		else if(value < totStar) {
+		
+		else if (value < 0) throw new IllegalArgumentException(); {
+			System.out.println("Throw argument");
+			
+		}
+		
+		
+		else {
 			System.out.println("*");
-			starString(value - 1);
+			
 		}
 		
 
-			
-			
-			
-			
-			
 			
 	}
 
