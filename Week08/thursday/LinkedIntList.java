@@ -43,11 +43,6 @@ public class LinkedIntList {
 //	}
 	
 	
-	// Recursive print method 
-	public void print() {
-		
-	}
-	
 	
 	
 	
