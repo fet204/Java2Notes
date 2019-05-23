@@ -4,7 +4,7 @@ import java.math.*;
 public class starString {
 
 	public static void main(String[] ars) {
-		starString(0);
+		starString(2);
 		System.out.println();
 		
 		/*
@@ -32,19 +32,18 @@ public class starString {
 
 		int i = 0;
 		
-		if(value == totStar) { 
-			System.out.println("if breaker");
+		if(totStar == 0) { 
+			System.out.println("*");
 		}
 		
-		
-		else if (value < 0) throw new IllegalArgumentException(); {
-			System.out.println("Throw argument");
+		else if (value < 0) {
+			throw new IllegalArgumentException("Error"); 
 			
 		}
 		
-		
-		else {
-			System.out.println("*");
+		if (value >= 0){
+			System.out.print("*");
+			starString(value-1);
 			
 		}
 		
