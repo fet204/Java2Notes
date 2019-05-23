@@ -10,6 +10,5 @@
 	<classpathentry kind="src" path="Week06"/>
 	<classpathentry kind="src" path="Week07"/>
 	<classpathentry kind="src" path="Week08"/>
-	<classpathentry kind="lib" path="C:/Users/franktbinh/Desktop/acm.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
