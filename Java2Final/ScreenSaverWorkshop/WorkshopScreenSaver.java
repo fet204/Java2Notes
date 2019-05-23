@@ -1,8 +1,11 @@
 package ScreenSaverWorkshop;
 
+//to use the imports you need to download and add the acm external jar
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import java.awt.*;
+
+
 
 public class WorkshopScreenSaver extends GraphicsProgram{
 	
@@ -21,6 +24,7 @@ public class WorkshopScreenSaver extends GraphicsProgram{
 	}
 	
 	// Taking the image we saved from google and making it the background of the window 
+	// Save the image in eclipse workspace bin
 	public void run() {
 		GImage img1 = new GImage("Background.png");
 		add(img1, 0, 0);
