@@ -80,7 +80,7 @@ public class WorkshopScreenSaver extends GraphicsProgram{
 			fishEye.move(4, 0);
 			fishPupil.move(4,  0);
 			
-			// Pause makes the animation run smoothly.
+			// Pause makes the animation run smoothly. big num = choppy speed
 			pause(10);
 			
 			// Taking the fish pieces and resetting the location
