@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="Java2Final"/>
 	<classpathentry kind="src" path="Week01SRC"/>
 	<classpathentry kind="src" path="Week02SRC"/>
 	<classpathentry kind="src" path="Week03SRC"/>
+	<classpathentry kind="src" path="Week04"/>
+	<classpathentry kind="src" path="Week05"/>
+	<classpathentry kind="src" path="Week06"/>
+	<classpathentry kind="src" path="Week07"/>
+	<classpathentry kind="src" path="Week08"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
