@@ -1,4 +1,4 @@
-package thursday;
+package LinkedListAssignment;
 
 import java.util.NoSuchElementException;
 
@@ -44,38 +44,7 @@ public class LinkedIntList {
 		System.out.print(current.data); // prints the last value because the while loop stops right before the last value because it is detecting the null. 
 	}
 	
-	public int min() {
-		if (front == null){
-	        throw new NoSuchElementException();
-	    }
-	    
-	    else {
-	        
-	        Integer lowestNum = front.data;
-	        Integer current = front.data;
-	        
-	        while (front != null){
-	            if (current < front.next.data){
-	                lowestNum = front.data;
-	            }
-	        }
-	        return lowestNum;
-	    }
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	public void remove(int index) {
 		if(index == 0) {
 			front = front.next;
@@ -90,11 +59,53 @@ public class LinkedIntList {
 			current.next = current.next.next; 
 		}
 	}
+	
+	
+	// Assignment min 
+	public int min() {
+	    if (front == null) {
+	        throw new NoSuchElementException();
+	    } else {
+	        int min = front.data;
+	        ListNode current = front.next;
+	        
+	        while (current != null) {
+	            if (current.data < min) {
+	                min = current.data;
+	            }
+	            current = current.next;
+	        }
+	        
+	        return min;
+	    }
+	}
+	
+	// Assignment isSorted 
+	public boolean isSorted() {
+		boolean booler = true;
+		
+		if (front == null) {
+			return booler; 
+		}
+		
+		else {
+			int holder = front.data;
+			ListNode current = front.next;
+			while (current != null ) {
+				if (current.data < holder) {
+					
+				}
+			}
+			
+		}
+		return true; 
+	}
+	
+	
+	
+	
+	
 }
-
-/*
- * 
- */
 
 
 
