@@ -6,9 +6,15 @@ public class Client {
 		list.add(5);
 		list.add(6);
 		list.add(7);
+		list.add(5);
+		list.add(5);
+		list.add(6);
 		list.print();
 		
-		System.out.println(list.min());
+		list.removeLast(5);
+		
+		System.out.println(list);
+		
 	}
 
 }

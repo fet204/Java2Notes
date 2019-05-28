@@ -64,18 +64,6 @@ public class LinkedIntList {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public void remove(int index) {
 		if(index == 0) {
 			front = front.next;
@@ -90,6 +78,88 @@ public class LinkedIntList {
 			current.next = current.next.next; 
 		}
 	}
+	
+	// Inclass notes 
+	public boolean hasAltParity() {
+		
+		if (front != null) {
+			ListNode current = front; 
+			while(current.next != null) {
+				if(current.data %2 == current.next.data % 2) {
+					return false;
+				}
+				current = current.next;
+			}
+		}
+		return true; 
+	}
+	
+	public void removeLast(int value) {
+		if (front != null) { // always check to make sure it is not null 
+			ListNode current = front; // always make a current to start going through the list. 
+			ListNode spot = null; 
+			while(current.next != null) {
+				if (current.next.data == value) {
+					spot = current; 
+				}
+				current = current.next; 
+			}
+			if (spot != null) {
+				spot.next = spot.next.next;
+			}
+			else if (front.data == value) {
+				front = front.next;
+			}
+		}
+	}
+	
+	
+	public void trimEnds(int k) {
+		int size = 0; 
+		ListNode current = front; 
+		// Size list counter.
+		while (current != null) {
+			size++; 
+			current = current.next; 
+		}
+		if (size < 2 * k) {
+			throw new IllegalArgumentException(); 
+		}
+		else if (size == 2 * k) {
+			front = null; 
+		}
+		else if (k <= 0) {
+			// leave the list unchanged 
+		}
+		
+		else if (k < 0) {
+			for (int count = 0; count < k; count++) {
+				front = front.next; 
+			}
+			int count = 0;
+			current = front; 
+			while(count < size - k -1) {
+				current = current.next; 
+				count++;
+			}
+			current.next = null; 
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 /*
