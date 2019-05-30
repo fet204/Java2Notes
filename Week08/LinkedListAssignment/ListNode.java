@@ -7,6 +7,7 @@ public class ListNode {
 	int data; 
 	ListNode next; 
 	
+	// constructor 
 	public ListNode(int data) {
 		this.data = data; 
 		next = null; 
