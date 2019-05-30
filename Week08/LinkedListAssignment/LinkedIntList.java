@@ -129,7 +129,15 @@ public class LinkedIntList {
 	}
 	
 	// toString method 
-	public 
+	public String toString() {
+		ListNode current = front; 
+		String thing = "";
+		while(current != null) {
+			thing = thing + current.data + " ";
+			current = current.next;
+		}
+		return thing;
+	}
 	
 	
 }
