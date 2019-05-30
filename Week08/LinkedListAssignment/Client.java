@@ -10,11 +10,13 @@ public class Client {
 		list.add(7);
 		list.print();
 		
-		System.out.println();
-		
 		System.out.println(list.min());
-		
-		System.out.println(list2.isSorted());
+		System.out.println(list.isEmpty());
+		System.out.println(list2.isEmpty());
+		list.clear();
+		System.out.println(list);
+
+
 	}
 
 }

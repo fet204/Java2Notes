@@ -101,8 +101,35 @@ public class LinkedIntList {
 		return true; 
 	}
 	
+	// Size method 
+	public int size() {
+		ListNode current = front;
+		int counter = 0; 
+		while (current != null) {
+			counter++; 
+			current = current.next;
+		}
+		return counter; 
+	}
 	
+	// isEmpty method list 
+	public boolean isEmpty() {
+		ListNode current = front; 
+		if(current != null) {
+			return false;
+		}
+		else 
+			return true;
+	}
 	
+	// clear method 
+	public void clear() {
+		ListNode current = front; 
+		current = null; 
+	}
+	
+	// toString method 
+	public 
 	
 	
 }
