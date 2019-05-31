@@ -139,6 +139,34 @@ public class LinkedIntList {
 		return thing;
 	}
 	
+	//indexOf
+	public int indexOf(int value) {
+		int index = 0;
+		ListNode current = front; 
+		while (current != null) {
+			index++; 
+			if (current.data == value) {
+				return index; 
+			}
+			else 
+				current = current.next;
+		}
+		
+		return index; 
+	}
+	
+	// contains method 
+	public boolean contains(int value) {
+		ListNode current = front;
+		boolean caller = false; 
+		while(current != null) {
+			if (current.data == value) {
+				return !caller;
+			}
+		}
+		return caller; 
+	}
+	
 	
 }
 
