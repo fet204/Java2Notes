@@ -5,7 +5,7 @@ public class IntTreeNode {
 	IntTreeNode right; 
 	IntTreeNode left;
 	
-	// If user just gives data in the constuctor 
+	// If user just gives data in the constructor  
 	public IntTreeNode(int data) {
 //		this.data = data; 
 //		right = null;
