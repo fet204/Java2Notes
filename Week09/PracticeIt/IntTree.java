@@ -23,8 +23,14 @@ public class IntTree {
 			root.left = add(root.left, value);
 		}
 		return root;
-		
-		
+	}
+	
+	// intTree size method 
+	public int countLeftNodes(IntTreeNode root) {
+		if (root.equals(0)) {
+			
+		}
+		return 4;
 	}
 
 }
