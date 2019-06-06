@@ -31,25 +31,15 @@ public class IntTree {
 		return equal(overallRoot, other.overallRoot);
 	}
 	
-	private boolean equal(IntTreeNode, root, IntTreeNode root 2) {
+	private boolean equal(IntTreeNode root1, IntTreeNode root2) {
 		if (root1 == null|| root2 == null) {
 			return root1 == null && root2 == null; 
 		}
 		
 		else {
-			return root1.data == root2.data && equal(root1.left, root2.left) && equals(root1.right, root2.right)
+			return root1.data == root2.data && equal(root1.left, root2.left) && equal(root1.right, root2.right);
 		}
+		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-}
 }
 
