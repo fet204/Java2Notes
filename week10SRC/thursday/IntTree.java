@@ -25,9 +25,8 @@ public class IntTree {
 		return root;
 	}
 	
-	
+	// Inclass Equals method 
 	public boolean equal(IntTree other) {
-		
 		return equal(overallRoot, other.overallRoot);
 	}
 	
@@ -41,5 +40,33 @@ public class IntTree {
 		}
 		
 	}
+	
+	
+	// Inclass countBelow assignment
+	public int count(int min) {
+		if (min <= 0) {
+			throw new IllegalArgumentException(); 
+		}
+		
+		else {
+			return count(overallRoot, min);
+		}
+		
+	}
+	
+	private int count(IntTreeNode root, int min) {
+		int count = 0;
+		if (root != null) {
+			if (min <= 1) {
+				count ++;
+			}
+			count += count(root.left, min  -1) + count(root.right, min - 1);
+		}
+		return count;
+	}
+	
+	
+	
+	
 }
 
